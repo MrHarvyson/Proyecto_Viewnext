@@ -1,13 +1,14 @@
-![](https://www.linkem.es/wp-content/uploads/2018/07/viewnext.png)
+![](https://desvinculados.viewnext.com/Recursos/Imagenes/logo-viewnext.png)
 
 
-![Static Badge](https://img.shields.io/badge/Spring-grey?logo=spring) ![Static Badge](https://img.shields.io/badge/IntelliJ-IDEA-grey?logo=IntelliJ-IDEA) ![Static Badge](https://img.shields.io/badge/Visual%20Studio%20Code-grey?logo=visual-studio-code)
+![Static Badge](https://img.shields.io/badge/Spring-grey?logo=spring) ![Static Badge](https://img.shields.io/badge/IntelliJ-IDEA-grey?logo=IntelliJ-IDEA) ![Static Badge](https://img.shields.io/badge/Visual%20Studio%20Code-grey?logo=visual-studio-code) ![Static Badge](https://img.shields.io/badge/JavaScript-grey?logo=JavaScript)
 
 
 
 
 
-[Descripción del proyecto](#descripción-del-proyecto)
+
+[Descripción del proyecto](#creación-de-microservicios-agencia-de-viajes)
 
 [Estado del proyecto](#Estado-del-proyecto)
 
@@ -25,7 +26,7 @@
 
 [Conclusión](#conclusión)
 
-[Creación de microservicios agencia de viajes](#creación-de-microservicios-agencia-de-viajes)
+## Creación de microservicios agencia de viajes
 
 Se pretende crear una aplicación para una agencia de viajes, basada en microservicios. En el  backend, la 
 aplicación constará de tres microservicios que accederán a una base de datos. Se trata de los 
@@ -66,6 +67,11 @@ con el servicio de vuelos para actualizar las plazas disponibles al realizar la 
 (nombre, dni, vuelo), para el nombre hotel recibido como variable en url. Deberá 
 interaccionar con el servicio de hoteles para conocer el idHotel a partir de su nombre
 
+# ESTADO DEL PROYECTO
+
+<h4 align="center">
+:construction: Proyecto en construcción :construction:
+</h4>
 
 ### [FRONT](https://github.com/MrHarvyson/Proyecto_Viewnext/tree/main/htmlAgencia)
 
