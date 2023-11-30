@@ -1,0 +1,33 @@
+---------HOTELES
+
+@GET -> lista de todos los hoteles
+http://localhost:8000/hoteles
+
+@GET -> hotel con el nombre tal
+http://localhost:8000/hoteles/{nombre}
+
+@GET -> lista hoteles disponibles
+http://localhost:8000/hoteles/disponibles
+
+---------VUELOS
+
+@GET -> lista de todos los vuelos
+http://localhost:9000/vuelos
+
+@GET -> lista de vuelos disponible segun plazas de reservas enviadas
+http://localhost:9000/vuelos/{plazas}
+
+@PUT -> actualizar un vuelo segun las plazas que se le pasan para reservar
+http://localhost:9000/vuelos/{idvuelo}/{plazasreservadas}
+
+---------RESERVAS
+
+@GET -> lista de todas las reservas
+http://localhost:8080/reservas
+
+@GET -> lista de reservar para el nombre del hotel que se le pase (nombre, dni, idvuelo)
+http://localhost:8080/reservas/{nombre}
+(puede probar con los nombre de hoteles Hotel Valencia o Hotel Málaga para que salgan más de un resultado)
+
+@POST -> creamos una reserva y se actualiza en el microservicio de vuelos las plazas disponibles
+http://localhost:8080/reservas

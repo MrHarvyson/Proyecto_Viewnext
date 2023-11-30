@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agencia de viajes</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg fixed-top opacity">
+      <div class="container-fluid align-items-center gap-5">
+        <img
+          src="img/logo.png"
+          alt="Logo"
+          width="60"
+          class="d-inline-block align-text-top mx-5 my-2"
+        />
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#idinicio"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#idhoteles"
+                >Aventuras</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <div class="position-relative">
+      <img class="encabezado1" src="img/imgCabecera.webp" />
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"
+      ></div>
+      <form
+        class="position-absolute top-50 start-50 translate-middle mt-5 text-center"
+        id="formulario"
+      >
+        <div class="col">
+          <label type="text" class="mb-5 form-label text-white fw-bold fs-1"
+            >Aventuras y viajes en grupo por el mundo</label
+          >
+          <label type="text" class="mb-5 form-label text-white fs-5"
+            >Elige el destino, nosotros ponemos los amigos</label
+          >
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <input
+              type="text"
+              id="nombreHotel"
+              class="form-control"
+              placeholder="Hoteles"
+            />
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-dark">Buscar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Intro -->
+
+    <div id="idinicio"></div>
+
+    <div class="row text-center mt-5 page justify-content-center">
+      <!-- Titulo -->
+      <h3 class="pt-5">
+        <strong>Llena tu vida de nuevas aventuras y viajes en grupo</strong>
+      </h3>
+
+      <!-- Intro -->
+      <p class="mt-5 mx-5 text-center">
+        Huakai es una <strong>comunindad de viajeros</strong>, unidos por el
+        deseo de descubrir el mundo,<strong> hacer nuevos amigos</strong> y
+        vivir experiencias únicas de la mano de un
+        <strong>coordinador de viaje</strong>. ¡El viaje en grupo que estabas
+        buscando!
+      </p>
+
+      <!-- Otros -->
+      <div class="row justify-content-center gap-5 mx-5 mt-5">
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card border-0">
+            <div class="card-body">
+              <img
+                src="https://huakai.es/wp-content/uploads/2019/09/map-2.svg"
+                class="card-img-top small"
+                alt="..."
+              />
+              <h5 class="card-title mt-5">Viajes de aventura</h5>
+              <p class="card-text">
+                Auténticas experiencias de viaje que recordarás.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card border-0">
+            <div class="card-body">
+              <img
+                src="https://huakai.es/wp-content/uploads/2019/09/backpack-2.svg"
+                class="card-img-top small"
+                alt="..."
+              />
+              <h5 class="card-title mt-5">Con un coordinador experto</h5>
+              <p class="card-text">
+                Cada grupo tiene un coordinador que se encarga de la logística.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 d-flex align-items-stretch">
+          <div class="card border-0">
+            <div class="card-body">
+              <img
+                src="https://huakai.es/wp-content/uploads/2019/09/travelling-2.svg"
+                class="card-img-top small"
+                alt="..."
+              />
+              <h5 class="card-title mt-5">Flexibilidad en el vuelo</h5>
+              <p class="card-text">
+                Te damos total libertad de elección ¡Nos reuniremos en el
+                destino!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-bottom"></div>
+
+    <!-- Hoteles -->
+
+    <div class="bloque" id="idhoteles"></div>
+    <div>
+      <h1 class="text-center pb-5">AVENTURAS</h1>
+    </div>
+
+    <!-- Cards -->
+    <div
+      class="container my-5 d-grid gap-5"
+      style="grid-template-columns: repeat(3, 1fr)"
+      id="hoteles"
+    ></div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/formulario.js"></script>
+    <script src="scripts/cards.js"></script>
+  </body>
+</html>
