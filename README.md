@@ -10,21 +10,8 @@
 
 [Descripción del proyecto](#creación-de-microservicios-agencia-de-viajes)
 
-[Estado del proyecto](#Estado-del-proyecto)
+[Estado del proyecto](#estado-del-proyecto)
 
-[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
-
-[Acceso al proyecto](#acceso-proyecto)
-
-[Tecnologías utilizadas](#tecnologías-utilizadas)
-
-[Personas Contribuyentes](#personas-contribuyentes)
-
-[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
-
-[Licencia](#licencia)
-
-[Conclusión](#conclusión)
 
 ## Creación de microservicios agencia de viajes
 
@@ -73,45 +60,56 @@ interaccionar con el servicio de hoteles para conocer el idHotel a partir de su 
 :construction: Proyecto en construcción :construction:
 </h4>
 
-### [FRONT](https://github.com/MrHarvyson/Proyecto_Viewnext/tree/main/htmlAgencia)
+# :hammer:Funcionalidades del proyecto
 
-Una vez levantados los tres servicios podremos hacer uso de la página web la cual usará los endpoints.
+- `Funcionalidad 1` : listar todos los hoteles que tenemos registrado en la base de datos.
+- `Funcionalidad 2` : obtener los datos del hotel que pidamos.
+- `Funcionalidad 3` : listar todos los hoteles disponibles.
+- `Funcionalidad 4` : listar todos los vuelos.
+- `Funcionalidad 5` : listar los vuelos que disponen de la cantidad de plazas que tienen.
+- `Funcionalidad 6` : actualizar un vuelo segun las plazas que se le pase.
+- `Funcionalidad 7` : lista de todas las reservas.
+- `Funcionalidad 8` : lista de reservar para el nombre del hotel que se le pase (nombre, dni, idvuelo).
+- `Funcionalidad 9` :crear una reserva y que se actualice en el microservicio de vuelos las plazas disponibles
+
+
+Disponemos de una [página web](https://github.com/MrHarvyson/Proyecto_Viewnext/tree/main/htmlAgencia) para usar la mayoría de los endPoints.
 
 ---
 
 # END POINTS
 
-## HOTELES
+## HOTEL
 
-@GET -> lista de todos los hoteles
+`@GET`: lista de todos los hoteles
 http://localhost:8000/hoteles
 
-@GET -> hotel con el nombre tal
+`@GET`: hotel con el nombre tal
 http://localhost:8000/hoteles/{nombre}
 
-@GET -> lista hoteles disponibles
+`@GET`: lista hoteles disponibles
 http://localhost:8000/hoteles/disponibles
 
-## VUELOS
+## VUELO
 
-@GET -> lista de todos los vuelos
+`@GET`: lista de todos los vuelos
 http://localhost:9000/vuelos
 
-@GET -> lista de vuelos disponible segun plazas de reservas enviadas
+`@GET`: lista de vuelos disponible segun plazas de reservas enviadas
 http://localhost:9000/vuelos/{plazas}
 
-@PUT -> actualizar un vuelo segun las plazas que se le pasan para reservar
+`@PUT`: actualizar un vuelo segun las plazas que se le pasan para reservar
 http://localhost:9000/vuelos/{idvuelo}/{plazasreservadas}
 
-## RESERVAS
+## RESERVA
 
-@GET -> lista de todas las reservas
+`@GET`: lista de todas las reservas
 http://localhost:8080/reservas
 
-@GET -> lista de reservar para el nombre del hotel que se le pase (nombre, dni, idvuelo)
+`@GET`: lista de reservar para el nombre del hotel que se le pase (nombre, dni, idvuelo)
 http://localhost:8080/reservas/{nombre}
 (puede probar con los nombre de hoteles Hotel Valencia o Hotel Málaga para que salgan más de un resultado)
 
-@POST -> creamos una reserva y se actualiza en el microservicio de vuelos las plazas disponibles
+`@POST`: creamos una reserva y se actualiza en el microservicio de vuelos las plazas disponibles
 http://localhost:8080/reservas
 
